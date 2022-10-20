@@ -18,11 +18,11 @@ const Header = styled.div`
   }
 `
 
-function AppHeader() {
+function AppHeader({ liked, allPosts }) {
   return (
     <Header>
       <h1>John Sultan</h1>
-      <h3>5 записей, из них понравилось 0</h3>
+      <h3>{allPosts} записей, из них понравилось {liked}</h3>
     </Header>
   )
 }
